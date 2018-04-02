@@ -14,6 +14,6 @@ app.get('/', function(req, res) {
 app.get('/api/animals', controllers.animals.index);
 // app.post('/api/animals', controllers.animals.create);
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log('Your app is running on port 3000');
 })
